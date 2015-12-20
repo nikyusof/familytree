@@ -85,7 +85,7 @@ section.contact legend {
 section.contact label {
     display: inline-block;
     float: left;
-    width: 155px;
+    width: 280px;
     margin: 6px 0;
     color: #737373;
 }
@@ -129,6 +129,11 @@ section.contact button.submit {
 section.contact button.submit:hover { 
     color: #df4244;
     background: #fff; 
+}
+
+.button_wrapper {
+    text-align: center;
+    padding-top: 25px;
 }
 
 section.contact span.required { 
