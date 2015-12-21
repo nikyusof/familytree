@@ -131,8 +131,39 @@ section.contact button.submit:hover {
     background: #fff; 
 }
 
-.add_child {
+.child_wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.add_child, .remove_child {
     border-radius: 30px;
+}
+
+.child_tag {
+    position: absolute;
+}
+
+.remove_child {
+    position: absolute;
+    right: 0;
+}
+
+.button_add_child_wrapper {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+.add_child_button {
+    position: absolute;
+}
+
+.add_child_title {
+    position: absolute;
+    margin-left: 50px;
 }
 
 .button_wrapper {
