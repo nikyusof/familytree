@@ -79,7 +79,7 @@
         				</p>
         				<p>
         					<label for="dob">DOB <span class="required">*</span></label>
-					        <input type="text" name="dob" class="dob"/>
+					        <input type="text" name="dob" class="js-dob"/>
         				</p>
         			</fieldset>
         			<fieldset>
@@ -98,9 +98,12 @@
         				</p>
         				<p>
         					<label for="spouse_dob">DOB </label>
-					        <input type="text" name="spouse_dob" class="dob"/>
+					        <input type="text" name="spouse_dob" class="js-dob"/>
         				</p>				       
         			</fieldset>
+        			<div>
+        				<button type="button" class="js-add-child btn btn-primary add_child" data-count="0">+</button>
+        			</div>        		
         			<div class="button_wrapper">
         				<button class="submit" type="submit">Submit</button>
         			</div>

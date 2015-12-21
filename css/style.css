@@ -131,6 +131,10 @@ section.contact button.submit:hover {
     background: #fff; 
 }
 
+.add_child {
+    border-radius: 30px;
+}
+
 .button_wrapper {
     text-align: center;
     padding-top: 25px;
