@@ -1,8 +1,12 @@
-$('.js-dob').dateDropper({
-	years_multiple: '10',
-	minYear: '1940',
-	animation: 'bounce'
-});
+function activateDatePicker() {
+	$('.js-dob').dateDropper({
+		years_multiple: '10',
+		minYear: '1940',
+		animation: 'bounce'
+	});
+}
+
+activateDatePicker();
 
 // global variable for count
 var count = 0;
@@ -23,6 +27,7 @@ $('.js-add-child').click(function(e) {
 function addChildElement(count) {
 	var $childElement = '<fieldset class="child_' + count + '"><div class="child_wrapper"><h2 class="child_tag"><strong>Child ' + count + '</strong></h2><button type="button" class="js-remove-child btn btn-danger remove_child" data-child="' + count + '">-</button></div><p><label for="child_' + count + '_name">Full Name </label><input type="text" name="child_' + count + '_name" /></p><p><label for="child_' + count + '_email">Email </label><input type="email" name="child_' + count + '_email"/></p><p><label for="child_' + count + '_phone">Phone Number </label><input type="text" name="child_' + count + '_phone"/></p><p><label for="child_' + count + '_dob">DOB </label><input type="text" name="child_' + count + '_dob" class="js-dob"/></p></fieldset>';
     $($childElement).insertBefore('.js-add-child');
+    activateDatePicker();
 }
 
 /**
