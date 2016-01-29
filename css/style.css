@@ -45,6 +45,27 @@ h2 {
 	}
 }
 
+.thankyou-header {
+    padding-top: 93vh;
+    height: 100vh;
+    padding-bottom: 20px;
+    background: url(../images/jazakallah.png) no-repeat center center;
+    background-size: center;
+    width: 100%;
+    text-align: center;
+    background-color: #DC4F53;
+}
+
+@media (min-width: 768px) {
+    .thankyou-header .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-image: url(../images/jazakallah.png) no-repeat center center;
+        background-size: center;
+        text-align: center;
+    }
+}
+
 .container {
 	padding-right: 0px;
 	padding-left: 0px;
@@ -93,11 +114,11 @@ section.contact label {
 section.contact input, 
 section.contact textarea, 
 section.contact select { 
-    width: 280px; 
+    width: 100%; 
     padding: 14px 20px; 
     color: #eee; 
     background: #333;
-    margin: 0 0 35px 0; 
+    margin: 0 0 10px 0;
     border: 0;
     outline: none;
 }
@@ -124,6 +145,8 @@ section.contact button.submit {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
     border-radius: 3px;
+    margin: 0 auto;
+    width: 100%
 }
 
 section.contact button.submit:hover { 
@@ -131,10 +154,13 @@ section.contact button.submit:hover {
     background: #fff; 
 }
 
+.person {
+    margin-bottom: 30px;
+}
+
 .child_wrapper {
     width: 100%;
     position: relative;
-    padding-top: 20px;
     padding-bottom: 60px;
 }
 
@@ -153,7 +179,7 @@ section.contact button.submit:hover {
 
 .button_add_child_wrapper {
     position: relative;
-    padding-top: 5px;
+    margin-top: 30px;
     padding-bottom: 40px;
 }
 
