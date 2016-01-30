@@ -177,7 +177,9 @@
 
 // });
 
-
+/**
+* Function to activate the date picker
+*/
 function activateDatePicker() {
 	$('.js-dob').dateDropper({
 		years_multiple: '10',
@@ -186,6 +188,7 @@ function activateDatePicker() {
 	});
 }
 
+// initialize the date picker when the application starts
 activateDatePicker();
 
 // global variable for count
@@ -207,6 +210,8 @@ $('.js-add-child').click(function(e) {
 function addChildElement(count) {
 	var $childElement = '<fieldset class="child_' + count + '"><div class="child_wrapper"><h2 class="child_tag"><strong>Child ' + count + '</strong></h2><button type="button" class="js-remove-child btn btn-danger remove_child" data-child="' + count + '">-</button></div><p><label>Full Name </label><input type="text" name="child_' + count + '_name" /></p><p><label>Email </label><input type="email" name="child_' + count + '_email"/></p><p><label">Phone Number </label><input type="text" name="child_' + count + '_phone"/></p><p><label">DOB </label><input type="text" name="child_' + count + '_dob" class="js-dob"/></p></fieldset>';
     $($childElement).insertBefore('.button_add_child_wrapper');
+
+    // activate the date picker once a child is added
     activateDatePicker();
 }
 
